@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tes/screens/cadastro_funcionario_screen.dart';
+import 'package:flutter_tes/screens/cadastro_item_screen.dart';
+import 'package:flutter_tes/screens/listar_funcionario_screen.dart';
+
+
 
 void main() {
   runApp(MyApp());
@@ -35,7 +40,7 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
               onPressed: () {
-                // Ação a ser realizada ao pressionar o botão
+                // Navegação ao pressionar o botão
               },
               style: ElevatedButton.styleFrom(
       minimumSize: Size(70, 70), // Defina a altura desejada aqui
@@ -49,7 +54,7 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
               onPressed: () {
-                // Ação a ser realizada ao pressionar o botão
+                // Navegação ao pressionar o botão
               },
               style: ElevatedButton.styleFrom(
       minimumSize: Size(70, 70), // Definição da altura do botão
@@ -61,7 +66,7 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
               onPressed: () {
-                // Ação a ser realizada ao pressionar o botão
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CadastroFuncionarioScreen(),));// Navegação ao pressionar o botão
               },
               style: ElevatedButton.styleFrom(
       minimumSize: Size( 70,70), // Defina a altura desejada aqui
@@ -73,7 +78,7 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
               onPressed: () {
-                // Ação a ser realizada ao pressionar o botão
+              Navigator.push(context, MaterialPageRoute(builder: (context) => CadastroItemScreen(),));  // Ação a ser realizada ao pressionar o botão
               },
               style: ElevatedButton.styleFrom(
       minimumSize: Size(70, 70), // Defina a altura desejada aqui
@@ -85,7 +90,7 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
               onPressed: () {
-                // Ação a ser realizada ao pressionar o botão
+              // Ação a ser realizada ao pressionar o botão
               },
               style: ElevatedButton.styleFrom(
       minimumSize: Size(70, 70), // Defina a altura desejada aqui
@@ -123,73 +128,4 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-// import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: HomeScreen(),
-//     );
-//   }
-// }
-
-// class HomeScreen extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: PreferredSize(
-//         preferredSize: Size.fromHeight(80),
-//         child: AppBar(
-//           elevation: 0,
-//           backgroundColor: Color.fromARGB(255, 21, 172, 172),
-//           flexibleSpace: Padding(
-//             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-//             child: Row(
-//               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//               children: [
-//                 Text(
-//                   'CME - Central de Material Esterilizado',
-//                   style: TextStyle(
-//                     color: Colors.white,
-//                     fontSize: 26,
-//                     fontWeight: FontWeight.bold,
-//                   ),
-//                 ),
-//                 IconButton(
-//                   onPressed: () {
-//                     // Ação a ser realizada ao pressionar o botão de sair
-//                   },
-//                   icon: Icon(Icons.exit_to_app, color: Colors.black,)
-//                   ,
-//                 ),
-//               ],
-//             ),
-//           ),
-//         ),
-//       ),
-//       body: Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         children: [
-//           Padding(
-//             padding: const EdgeInsets.all(16.0),
-//             child: ElevatedButton(
-//               onPressed: () {
-//                 // Ação a ser realizada ao pressionar o botão
-//               },
-//               style: ElevatedButton.styleFrom(
-//                 minimumSize: Size(70, 70), // Defina a altura desejada aqui
-//               ),
-//               child: Text('Pesquisar Funcionário'),
-//             ),
-//           ),
-//           // Resto dos botões aqui...
-//         ],
-//       ),
-//     );
-//   }
-// }

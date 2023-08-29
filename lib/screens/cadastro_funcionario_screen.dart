@@ -65,20 +65,20 @@ class _CadastroFuncionarioScreenState
   }
 
   void _cadastrarFuncionario() {
-    // Aqui você pode implementar a lógica para cadastrar o funcionário
+    // lógica para cadastrar o funcionário
     // Pode criar uma instância da classe Funcionario usando os valores dos controladores
     // e adicionar à lista de funcionários, por exemplo.
     final funcionario = Funcionario(
-      id: 1, // Id fictício, você deve ajustar conforme sua lógica
+      id: 1, // Id fictício, ajustar conforme a lógica
       nome: _nomeController.text,
       cargo: _cargoController.text,
       itensEmprestados: [],
     );
 
-    // Aqui você pode adicionar a lógica para adicionar o funcionário a uma lista
-    // ou a um banco de dados, dependendo da sua implementação.
+    // adicionar a lógica para adicionar o funcionário a uma lista
+    // ou a um banco de dados, dependendo da implementação.
     
-    // Após o cadastro, você pode navegar para outra tela ou fazer outras ações.
+    // Após o cadastro, pode navegar para outra tela ou fazer outras ações.
   }
 }
 

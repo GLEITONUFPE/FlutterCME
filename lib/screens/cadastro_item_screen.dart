@@ -91,11 +91,11 @@ class _CadastroItemScreenState extends State<CadastroItemScreen> {
   }
 
   void _cadastrarItem() {
-    //  lógica para cadastrar o item
+    // lógica para cadastrar o item
     // Pode criar uma instância da classe Item usando os valores dos controladores
     // e adicionar à lista de itens, por exemplo.
     final item = Item(
-      id: 1, // Id fictício, você deve ajustar conforme sua lógica
+      id: 1, // Id fictício, deve ajustar conforme sua lógica
       nome: _nomeController.text,
       tipo: _tipoController.text,
       quantidadeTotal: int.parse(_quantidadeTotalController.text),
@@ -106,7 +106,7 @@ class _CadastroItemScreenState extends State<CadastroItemScreen> {
     // lógica para adicionar o item a uma lista
     // ou a um banco de dados, dependendo da sua implementação.
 
-    // Após o cadastro, você pode navegar para outra tela ou fazer outras ações.
+    // Após o cadastro, pode navegar para outra tela ou fazer outras ações.
   }
 }
 
