@@ -90,7 +90,7 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
               onPressed: () {
-              // Ação a ser realizada ao pressionar o botão
+            Navigator.push(context, MaterialPageRoute(builder: (context) => ListarFuncionarios(),));  // Ação a ser realizada ao pressionar o botão
               },
               style: ElevatedButton.styleFrom(
       minimumSize: Size(70, 70), // Defina a altura desejada aqui
@@ -110,19 +110,30 @@ class HomeScreen extends StatelessWidget {
               child: Text('Listar Ítens'),
             ),
           ),
-                   
+//           Column(
+  
+//   children: [
+//     Align(
+//       alignment: Alignment.topCenter,
+//       child: Container(
+//         width: 400,
+//         height: 300,
+//         child: Image.asset(
+//           'assets/images/tesouras.jpg',
+//           width: 300,
+//           height: 300,
+//         ),
+//       ),
+//     ),     
+    
+//   ],
+// )
+             
         ],
         
       ),
-      // Container(
-      //       width: 200,
-      //       height: 200,
-      //       child: Image.asset(
-      //         'assets/images/tesouras.jpg',
-      //         width: 200,
-      //         height: 200,
-      //       ),
-      //     ),
+      
+      
     );
     
   }

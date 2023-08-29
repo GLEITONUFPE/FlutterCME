@@ -25,14 +25,39 @@ class _CadastroFuncionarioScreenState
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Row(
+              children: [
+                Icon(Icons.person),
+                SizedBox(width: 8),
+                Text(
+                  'Dados do Funcionário',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            Container(
+              width: 600,
+              child:
             TextField(
               controller: _nomeController,
               decoration: InputDecoration(labelText: 'Nome'),
+              textInputAction: TextInputAction.next,
+              maxLength: 200,
+            ),
             ),
             SizedBox(height: 16),
+            Container(
+              width: 600,
+              child:
             TextField(
               controller: _cargoController,
               decoration: InputDecoration(labelText: 'Cargo'),
+              textInputAction: TextInputAction.next,
+              maxLength: 100,
+            ),
             ),
             SizedBox(height: 16),
             ElevatedButton(

@@ -27,32 +27,75 @@ class _CadastroItemScreenState extends State<CadastroItemScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Row(
+              children: [
+                Icon(Icons.storage),
+                SizedBox(width: 8),
+                Text(
+                  'Dados do Ítem',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            Container(
+              width: 600,
+              child:
             TextField(
               controller: _nomeController,
               decoration: InputDecoration(labelText: 'Nome'),
+              textInputAction: TextInputAction.next,
+              maxLength: 100,
+            ),
             ),
             SizedBox(height: 16),
+            Container(
+              width: 600,
+              child:
             TextField(
               controller: _tipoController,
               decoration: InputDecoration(labelText: 'Tipo'),
+              textInputAction: TextInputAction.next,
+              maxLength: 100,
+            ),
             ),
             SizedBox(height: 16),
+            Container(
+              width: 600,
+              child:
             TextField(
               controller: _quantidadeTotalController,
               decoration: InputDecoration(labelText: 'Quantidade Total'),
+              textInputAction: TextInputAction.next,
+              maxLength: 6,
               keyboardType: TextInputType.number,
             ),
+            ),
             SizedBox(height: 16),
+            Container(
+              width: 600,
+              child:
             TextField(
               controller: _quantidadeEstoqueController,
               decoration: InputDecoration(labelText: 'Quantidade em Estoque'),
+              textInputAction: TextInputAction.next,
+              maxLength: 6,
               keyboardType: TextInputType.number,
             ),
+            ),
             SizedBox(height: 16),
+            Container(
+              width: 600,
+              child:
             TextField(
               controller: _quantidadeEmprestadaController,
               decoration: InputDecoration(labelText: 'Quantidade Emprestada'),
+              textInputAction: TextInputAction.next,
+              maxLength: 6,
               keyboardType: TextInputType.number,
+            ),
             ),
             SizedBox(height: 16),
             ElevatedButton(
