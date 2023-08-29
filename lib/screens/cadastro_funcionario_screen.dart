@@ -1,18 +1,7 @@
 import 'package:flutter/material.dart';
+import '../classes/funcionario.dart';
 
-class Funcionario {
-  final int id;
-  final String nome;
-  final String cargo;
-  List<int> itensEmprestados;
 
-  Funcionario({
-    required this.id,
-    required this.nome,
-    required this.cargo,
-    required this.itensEmprestados,
-  });
-}
 
 class CadastroFuncionarioScreen extends StatefulWidget {
   @override
@@ -52,6 +41,7 @@ class _CadastroFuncionarioScreenState
               },
               child: Text('Cadastrar Funcionário'),
             ),
+            Container(height: 16),
             ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context); // Voltar para a tela anterior

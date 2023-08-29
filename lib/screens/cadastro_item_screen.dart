@@ -1,22 +1,5 @@
 import 'package:flutter/material.dart';
-
-class Item {
-  final int id;
-  final String nome;
-  final String tipo;
-  int quantidadeTotal;
-  int quantidadeEstoque;
-  int quantidadeEmprestada;
-
-  Item({
-    required this.id,
-    required this.nome,
-    required this.tipo,
-    required this.quantidadeTotal,
-    required this.quantidadeEstoque,
-    required this.quantidadeEmprestada,
-  });
-}
+import '../classes/item.dart';
 
 class CadastroItemScreen extends StatefulWidget {
   @override
@@ -78,6 +61,7 @@ class _CadastroItemScreenState extends State<CadastroItemScreen> {
               },
               child: Text('Cadastrar Item'),
             ),
+            Container(height: 16),// Criando um espaço entre os botoes de cadastrar e voltar
             ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context); // Voltar para a tela anterior
